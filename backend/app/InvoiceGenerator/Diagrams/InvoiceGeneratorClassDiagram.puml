@@ -1,0 +1,104 @@
+@startuml Class Diagram
+
+package App\Models {
+    class Invoice {
+        {field} +id
+        {field} +biller_id
+        {field} +customer_id
+        {field} +invoice_date
+        {field} +due_date
+        {field} +invoice_number
+        {field} +reference_number
+        {field} +biller_name
+        {field} +biller_address_line_one
+        {field} +biller_address_line_two
+        {field} +biller_email
+        {field} +biller_phone_number
+        {field} +biller_business_identity_code
+        {field} +biller_bank_name
+        {field} +biller_bank_iban
+        {field} +biller_bank_bic
+        {field} +biller_pdf_title
+        {field} +biller_pdf_author
+        {field} +customer_name
+        {field} +customer_address_line_one
+        {field} +customer_address_line_two
+        {field} +created_at
+        {field} +updated_at
+        .. Computed fields ..
+        {field} +amount_sum
+        {field} +vat_amount_sum
+        {field} +total_amount_sum
+        {field} +formatted_reference_number
+    }
+
+    class InvoiceLine {
+        {field} +id
+        {field} +invoice_id
+        {field} +description
+        {field} +amount
+        {field} +vat_percent
+        {field} +vat_amount
+        {field} +total_amount
+        {field} +created_at
+        {field} +updated_at
+    }
+}
+
+package App\InvoiceGenerator {
+    class FileOperation {
+        +loadFile(string $filename): string
+        +saveFile(string $filename, string $contents)
+    }
+
+    interface Formatter {
+        +formatMoney($cents): string
+        +formatDate(string $ymd): string
+    }
+
+    class FormatterFinnish {
+        +formatMoney($cents): string
+        +formatDate(string $ymd): string
+    }
+
+    class InvoiceGenerator {
+        +generatePdf(Invoice $invoice): string
+    }
+
+    class LatexGenerator {
+        +generate(Invoice $invoice, string $invoiceTemplate, string $lineTemplate): string
+    }
+
+    class PdfGenerator {
+        +generate(string $directory, string $texFilename)
+    }
+
+    class InvoiceGeneratorServiceProvider {
+        +register()
+    }
+
+    note as ServiceProviderNote
+        registered in config/app.php file
+    endnote
+}
+
+Formatter <|.. FormatterFinnish
+
+Invoice o-right- InvoiceLine
+Invoice --o InvoiceGenerator
+Invoice --o LatexGenerator
+
+hide InvoiceLine methods
+InvoiceLine --o LatexGenerator
+
+InvoiceGenerator *-- FileOperation
+InvoiceGenerator *-- LatexGenerator
+InvoiceGenerator *-- PdfGenerator
+
+LatexGenerator *-- Formatter
+
+FileOperation -[hidden]-> InvoiceGeneratorServiceProvider
+
+InvoiceGeneratorServiceProvider .right.> ServiceProviderNote
+
+@enduml

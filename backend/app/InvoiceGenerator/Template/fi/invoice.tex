@@ -1,0 +1,386 @@
+\documentclass[a4paper,10pt]{letter}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[finnish]{babel}
+\usepackage{times}
+\usepackage{microtype}
+\usepackage[left=0cm,top=0cm,right=0cm,bottom=0cm,nohead,nofoot]{geometry}
+\usepackage{rotating}
+\usepackage{epic}
+
+\pdfinfo {
+    /Title    (<<metadataTitle>>)
+    /Author   (<<metadataAuthor>>)
+    /Subject  ()
+    /Keywords ()
+    /Creator  ()
+    /Producer ()
+}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\DisableLigatures[f]{encoding=T1}
+
+\setlength{\unitlength}{1mm}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{picture}(210,297)(0,0)
+
+    %===========================================================
+
+    \put(126,270){
+        \fontsize{12pt}{12pt}\selectfont
+        \begin{minipage}[b]{30mm}
+            \textbf{LASKU}
+        \end{minipage}
+    }
+
+    \put(164,270){
+        \fontsize{12pt}{12pt}\selectfont
+        \begin{minipage}[b]{30mm}
+            \textbf{1 (1)}
+        \end{minipage}
+    }
+
+    %===========================================================
+
+    \linethickness{0.13mm}
+
+    % horizontal
+    \put(5,267){\line(1,0){200}}
+    \put(124,257){\line(1,0){81}}
+    \put(124,247){\line(1,0){81}}
+    \put(5,227){\line(1,0){200}}
+
+    % vertical
+    \put(124,227){\line(0,1){40}}
+    \put(162,247){\line(0,1){20}}
+
+    \put(20,247){
+        \fontsize{12pt}{14pt}\selectfont
+        \begin{minipage}[c]{90mm}
+            <<customerName>> \\
+            <<customerAddressLineOne>> \\
+            <<customerAddressLineTwo>>
+        \end{minipage}
+    }
+
+    \put(126,260){
+        \begin{minipage}[b]{36mm}
+            \fontsize{7pt}{7pt}\selectfont Päivämäärä \\[3pt]
+            \fontsize{10pt}{10pt}\selectfont <<invoiceDate>>
+        \end{minipage}
+    }
+
+    \put(164,260){
+        \begin{minipage}[b]{36mm}
+            \fontsize{7pt}{7pt}\selectfont Laskun numero \\[3pt]
+            \fontsize{10pt}{10pt}\selectfont <<invoiceNumber>>
+        \end{minipage}
+    }
+
+    %===========================================================
+
+    \put(20,210){
+        \begin{tabular}[t]{%
+            @{}p{102mm}% Kuvaus
+            @{}p{17mm}% Veroton yhteensä EUR
+            @{}p{17mm}% Alv prosentti
+            @{}p{17mm}% Alv EUR
+            @{}p{17mm}% Verollinen yhteensä EUR
+            @{}}
+            \fontsize{7pt}{8pt}\selectfont \parbox[b]{102mm}{Kuvaus} &
+            \fontsize{7pt}{8pt}\selectfont \parbox[b]{17mm}{\raggedleft Veroton \\ yhteensä} &
+            \fontsize{7pt}{8pt}\selectfont \parbox[b]{17mm}{\raggedleft Alv \\ \%} &
+            \fontsize{7pt}{8pt}\selectfont \parbox[b]{17mm}{\raggedleft Alv \\ EUR} &
+            \fontsize{7pt}{8pt}\selectfont \parbox[b]{17mm}{\raggedleft Yhteensä \\ EUR}
+            \tabularnewline
+            \hline
+            %<<invoiceLines>>
+            \hline
+            \fontsize{9pt}{9pt}\selectfont \parbox[b]{102mm}{Yhteensä \rule{0mm}{5mm}} &
+            \fontsize{9pt}{9pt}\selectfont \parbox[b]{17mm}{\raggedleft <<amountS>>} &
+            \fontsize{9pt}{9pt}\selectfont \parbox[b]{17mm}{} &
+            \fontsize{9pt}{9pt}\selectfont \parbox[b]{17mm}{\raggedleft <<vatS>>} &
+            \fontsize{9pt}{9pt}\selectfont \parbox[b]{17mm}{\raggedleft <<totalS>>}
+            \tabularnewline
+        \end{tabular}
+    }
+
+    %===========================================================
+
+    \linethickness{0.13mm}
+
+    % horizontal
+    \put(5,135){\line(1,0){200}}
+    \put(5,125){\line(1,0){200}}
+
+    % vertical
+    \put(86,125){\line(0,1){10}}
+    \put(124,125){\line(0,1){10}}
+    \put(162,125){\line(0,1){10}}
+
+    \put(88,128){
+        \begin{minipage}[b]{36mm}
+            \fontsize{7pt}{7pt}\selectfont Viitenumero \\[3pt]
+            \fontsize{10pt}{10pt}\selectfont <<referenceNumber>>
+        \end{minipage}
+    }
+
+    \put(126,128){
+        \begin{minipage}[b]{36mm}
+            \fontsize{7pt}{7pt}\selectfont Eräpäivä \\[3pt]
+            \fontsize{10pt}{10pt}\selectfont <<dueDate>>
+        \end{minipage}
+    }
+
+    \put(164,128){
+        \begin{minipage}[b]{36mm}
+            \fontsize{7pt}{7pt}\selectfont Yhteensä EUR \\[3pt]
+            \fontsize{10pt}{10pt}\selectfont <<totalS>>
+        \end{minipage}
+    }
+
+    %===========================================================
+
+    \linethickness{0.13mm}
+
+    \put(12,120){
+        \fontsize{8pt}{10pt}\selectfont
+        \begin{minipage}[t]{36mm}
+            \textbf{Postiosoite} \\
+            <<billerName>> \\
+            <<billerAddressLineOne>> \\
+            <<billerAddressLineTwo>>
+        \end{minipage}
+    }
+
+    \put(50,120){
+        \fontsize{8pt}{10pt}\selectfont
+        \begin{minipage}[t]{36mm}
+            \textbf{Yhteystiedot} \\
+            <<billerEmail>> \\
+            <<billerPhoneNumber>>
+        \end{minipage}
+    }
+
+    \put(88,120){
+        \fontsize{8pt}{10pt}\selectfont
+        \begin{minipage}[t]{36mm}
+            \textbf{Y-tunnus} \\
+            <<billerBusinessIdentityCode>>
+        \end{minipage}
+    }
+
+    \put(126,120){
+        \fontsize{8pt}{10pt}\selectfont
+        \begin{minipage}[t]{46mm}
+            \textbf{Pankki} \\
+            <<billerBankName>> \\
+            IBAN: <<billerBankIban>> \\
+            BIC: <<billerBankBic>>
+        \end{minipage}
+    }
+
+    %===========================================================
+
+    \dashline{2}(5,101.6)(205,101.6)
+
+    % horizontal
+    \linethickness{0.5mm}
+    \put(5,84.67){\line(1,0){200}}
+    \put(5,69.85){\line(1,0){111.76}}
+    \put(116.76,44.44){\line(1,0){88.24}}
+    \put(5,35.98){\line(1,0){200}}
+    \put(5,27.52){\line(1,0){200}}
+    \linethickness{0.13mm}
+    \put(28,40.21){\line(1,0){88.76}}
+
+    % vertical
+    \linethickness{0.5mm}
+    \put(25.32,69.85){\line(0,1){31.75}}
+    \put(25.32,27.52){\line(0,1){8.46}}
+    \put(116.76,27.52){\line(0,1){74.08}}
+    \put(136.76,27.52){\line(0,1){16.92}}
+    \put(166.76,27.52){\line(0,1){8.46}}
+
+    %---------------------------------------
+
+    \put(0,96.5){
+        \fontsize{7pt}{8pt}\selectfont
+        \begin{minipage}[t]{23mm}
+            \begin{flushright}
+                Saajan \\ tilinumero \\ Mottagarens \\ kontonummer
+            \end{flushright}
+        \end{minipage}
+    }
+
+    \put(26.32,98){
+        \fontsize{7pt}{8pt}\selectfont
+        \begin{minipage}[t]{20mm}
+            IBAN
+        \end{minipage}
+    }
+
+    \put(117.76,98){
+        \fontsize{7pt}{8pt}\selectfont
+        \begin{minipage}[t]{20mm}
+            BIC
+        \end{minipage}
+    }
+
+    \put(31.32,92){
+        \fontsize{10pt}{10pt}\selectfont
+        \begin{minipage}[t]{90mm}
+            \textbf{<<billerBankName>> ~~~ <<billerBankIban>>}
+        \end{minipage}
+    }
+
+    \put(122.76,92){
+        \fontsize{10pt}{10pt}\selectfont
+        \begin{minipage}[t]{70mm}
+            \textbf{<<billerBankBic>>}
+        \end{minipage}
+    }
+
+    %---------------------------------------
+
+    \put(0,78){
+        \fontsize{7pt}{8pt}\selectfont
+        \begin{minipage}[t]{23mm}
+            \begin{flushright}
+                Saaja \\ Mottagare
+            \end{flushright}
+        \end{minipage}
+    }
+
+    \put(31.32,76.5){
+        \fontsize{10pt}{10pt}\selectfont
+        \begin{minipage}[t]{70mm}
+            \textbf{<<billerName>>}
+        \end{minipage}
+    }
+
+    %---------------------------------------
+
+    \put(0,66){
+        \fontsize{7pt}{8pt}\selectfont
+        \begin{minipage}[t]{23mm}
+            \begin{flushright}
+                Maksajan \\ nimi ja \\ osoite \\ Betalarens \\ namn och \\ adress
+            \end{flushright}
+        \end{minipage}
+    }
+
+    \put(31.32,62){
+        \fontsize{10pt}{11pt}\selectfont
+        \begin{minipage}[t]{70mm}
+            <<customerName>> \\
+            <<customerAddressLineOne>> \\
+            <<customerAddressLineTwo>>
+        \end{minipage}
+    }
+
+    %---------------------------------------
+
+    \put(0,37.98){
+        \fontsize{7pt}{8pt}\selectfont
+        \begin{minipage}[b]{23mm}
+            \begin{flushright}
+                Allekirjoitus \\ Underskrift
+            \end{flushright}
+        \end{minipage}
+    }
+
+    \put(117.76,37.98){
+        \fontsize{7pt}{8pt}\selectfont
+        \begin{minipage}[b]{20mm}
+            Viitenumero \\ Ref. nr
+        \end{minipage}
+    }
+
+    \put(141.76,38.98){
+        \fontsize{10pt}{10pt}\selectfont
+        \begin{minipage}[b]{70mm}
+            \textbf{<<referenceNumber>>}
+        \end{minipage}
+    }
+
+    %---------------------------------------
+
+    \put(0,29.52){
+        \fontsize{7pt}{8pt}\selectfont
+        \begin{minipage}[b]{23mm}
+            \begin{flushright}
+                Tililtä nro \\ Från konto nr
+            \end{flushright}
+        \end{minipage}
+    }
+
+    \put(117.76,29.52){
+        \fontsize{7pt}{8pt}\selectfont
+        \begin{minipage}[b]{20mm}
+            Eräpäivä \\ Förfallodag
+        \end{minipage}
+    }
+
+    \put(141.76,30.52){
+        \fontsize{10pt}{10pt}\selectfont
+        \begin{minipage}[b]{70mm}
+            \textbf{<<dueDate>>}
+        \end{minipage}
+    }
+
+    \put(167.76,30.52){
+        \fontsize{10pt}{10pt}\selectfont
+        \begin{minipage}[b]{30mm}
+            \begin{flushright}
+                \textbf{<<totalS>>}
+            \end{flushright}
+        \end{minipage}
+    }
+
+    \put(167.76,33){
+        \fontsize{7pt}{8pt}\selectfont
+        \begin{minipage}[t]{20mm}
+            Euro
+        \end{minipage}
+    }
+
+    %---------------------------------------
+
+    \put(122.76,50){
+        \fontsize{9pt}{9pt}\selectfont
+        \begin{minipage}[t]{70mm}
+            \textbf{Viitenumeroa käytettävä maksettaessa}
+        \end{minipage}
+    }
+
+    \put(6,38){
+        \fontsize{8pt}{8pt}\selectfont
+        \begin{sideways}
+            \textbf{TILISIIRTO. GIRERING}
+        \end{sideways}
+    }
+
+    \put(145,23){
+        \fontsize{6pt}{7pt}\selectfont
+        \begin{minipage}[t]{60mm}
+            Maksu välitetään saajalle maksujenvälityksen ehtojen \\
+            mukaisesti ja vain maksajan ilmoittaman tilinumeron \\
+            perusteella. \\
+            Betalningen förmedlas till mottagaren enligt villkoren \\
+            för betalningsförmedling och endast till det \\
+            kontonummer som betalaren angivit.
+        \end{minipage}
+    }
+
+    %===========================================================
+
+\end{picture}
+
+\end{document}
