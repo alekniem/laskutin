@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match snapshot: invoice index page 1`] = `
+<div data-app="true"
+     class="v-application v-application--is-ltr theme--light"
+     id="app"
+>
+  <div class="v-application--wrap">
+    <header class="v-sheet theme--dark v-toolbar v-toolbar--extended v-toolbar--flat v-app-bar v-app-bar--fixed primary"
+            style="height: 112px; margin-top: 0px; transform: translateY(0px); left: 0px; right: 0px;"
+            data-booted="true"
+    >
+      <div class="v-toolbar__content"
+           style="height: 64px;"
+      >
+        <div class="v-toolbar__title">
+          <lsklogo-stub>
+          </lsklogo-stub>
+        </div>
+        <div class="spacer">
+        </div>
+        <button type="button"
+                class="v-btn v-btn--has-bg theme--dark v-size--small blue darken-4"
+                id="logoutButton"
+        >
+          <span class="v-btn__content">
+            Logout
+          </span>
+        </button>
+      </div>
+      <div class="v-toolbar__extension"
+           style="height: 48px;"
+      >
+        <div class="v-tabs theme--dark">
+          <div role="tablist"
+               class="v-item-group theme--dark v-slide-group v-tabs-bar v-tabs-bar--is-mobile white--text"
+               data-booted="true"
+          >
+            <div class="v-slide-group__prev v-slide-group__prev--disabled">
+              <transition-stub name="fade-transition">
+              </transition-stub>
+            </div>
+            <div class="v-slide-group__wrapper">
+              <div class="v-slide-group__content v-tabs-bar__content">
+                <div class="v-tabs-slider-wrapper"
+                     style="height: 2px; left: 0px; width: 0px;"
+                >
+                  <div class="v-tabs-slider">
+                  </div>
+                </div>
+                <a href="/invoice"
+                   aria-current="page"
+                   class="v-tab--active v-tab"
+                   tabindex="0"
+                   aria-selected="true"
+                   role="tab"
+                   id="invoiceTab"
+                >
+                  Invoices
+                </a>
+                <a href="/customer"
+                   class="v-tab"
+                   tabindex="0"
+                   aria-selected="false"
+                   role="tab"
+                   id="customerTab"
+                >
+                  Customers
+                </a>
+                <a href="/biller"
+                   class="v-tab"
+                   tabindex="0"
+                   aria-selected="false"
+                   role="tab"
+                   id="billerTab"
+                >
+                  Billers
+                </a>
+              </div>
+            </div>
+            <div class="v-slide-group__next v-slide-group__next--disabled">
+              <transition-stub name="fade-transition">
+              </transition-stub>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="v-main"
+          style="padding: 112px 0px 0px 0px;"
+          data-booted="true"
+    >
+      <div class="v-main__wrap">
+        <div class="ma-5">
+          <div>
+            INVOICE INDEX PAGE
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+`;
+
+exports[`App should match snapshot: login page 1`] = `
+<div data-app="true"
+     class="v-application v-application--is-ltr theme--light"
+     id="app"
+>
+  <div class="v-application--wrap">
+    <header class="v-sheet theme--dark v-toolbar v-toolbar--extended v-toolbar--flat v-app-bar v-app-bar--fixed primary"
+            style="height: 112px; margin-top: 0px; transform: translateY(0px); left: 0px; right: 0px;"
+    >
+      <div class="v-toolbar__content"
+           style="height: 64px;"
+      >
+        <div class="v-toolbar__title">
+          <lsklogo-stub>
+          </lsklogo-stub>
+        </div>
+        <div class="spacer">
+        </div>
+      </div>
+      <div class="v-toolbar__extension"
+           style="height: 48px;"
+      >
+        <div class="v-tabs theme--dark">
+          <div role="tablist"
+               class="v-item-group theme--dark v-slide-group v-tabs-bar v-tabs-bar--is-mobile white--text"
+          >
+            <div class="v-slide-group__prev v-slide-group__prev--disabled">
+              <transition-stub name="fade-transition">
+              </transition-stub>
+            </div>
+            <div class="v-slide-group__wrapper">
+              <div class="v-slide-group__content v-tabs-bar__content">
+                <div class="v-tabs-slider-wrapper"
+                     style="transition: none;"
+                >
+                  <div class="v-tabs-slider">
+                  </div>
+                </div>
+                <a href="/login"
+                   aria-current="page"
+                   class="v-tab--active v-tab"
+                   tabindex="0"
+                   aria-selected="true"
+                   role="tab"
+                   id="loginTab"
+                >
+                  Login
+                </a>
+              </div>
+            </div>
+            <div class="v-slide-group__next v-slide-group__next--disabled">
+              <transition-stub name="fade-transition">
+              </transition-stub>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="v-main"
+          style="padding: 112px 0px 0px 0px;"
+    >
+      <div class="v-main__wrap">
+        <div class="ma-5">
+          <div>
+            LOGIN PAGE
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+`;

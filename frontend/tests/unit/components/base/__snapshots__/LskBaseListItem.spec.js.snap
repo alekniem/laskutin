@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskBaseListItem should match snapshot 1`] = `
+<div tabindex="-1"
+     id="TEST_PARENT_IDTestItemIdListItem"
+     class="v-list-item theme--light"
+>
+  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+    TEST TEXT
+  </div>
+  <div class="v-list-item__content">
+    TEST VALUE
+  </div>
+</div>
+`;

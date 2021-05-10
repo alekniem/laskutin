@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskInputPercent should match snapshot: valid input 1`] = `
+<div>
+  <div class="v-input v-input--has-state v-input--is-label-active v-input--is-dirty theme--light v-text-field success--text">
+    <div class="v-input__control">
+      <div class="v-input__slot">
+        <div class="v-text-field__slot">
+          <label for="TEST_CID"
+                 class="v-label v-label--active theme--light success--text"
+                 style="left: 0px; position: absolute;"
+          >
+            TEST LABEL
+          </label>
+          <input id="TEST_CID"
+                 type="text"
+          >
+        </div>
+      </div>
+      <div class="v-text-field__details">
+        <div class="v-messages theme--light success--text">
+          <transition-group-stub tag="div"
+                                 name="message-transition"
+                                 class="v-messages__wrapper"
+          >
+          </transition-group-stub>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

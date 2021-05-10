@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskBaseListGroup should match snapshot: no items, group collapsed 1`] = `
+<div class="v-list-group v-list-group--no-action">
+  <div tabindex="0"
+       aria-expanded="false"
+       role="button"
+       class="v-list-group__header v-list-item v-list-item--link theme--light"
+  >
+    <div id="TEST_ACTIVATOR_ID"
+         class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold"
+    >
+      TEST TITLE
+    </div>
+    <div class="v-list-item__icon v-list-group__header__append-icon">
+      <i aria-hidden="true"
+         class="v-icon notranslate mdi mdi-chevron-down theme--light"
+      >
+      </i>
+    </div>
+  </div>
+  <transition-stub name="expand-transition">
+  </transition-stub>
+</div>
+`;
+
+exports[`LskBaseListGroup should match snapshot: no items, group expanded 1`] = `
+<div class="v-list-group v-list-group--active v-list-group--no-action primary--text"
+     value="true"
+>
+  <div tabindex="0"
+       aria-expanded="true"
+       role="button"
+       class="v-list-group__header v-list-item v-list-item--active v-list-item--link theme--light"
+  >
+    <div id="TEST_ACTIVATOR_ID"
+         class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold"
+    >
+      TEST TITLE
+    </div>
+    <div class="v-list-item__icon v-list-group__header__append-icon">
+      <i aria-hidden="true"
+         class="v-icon notranslate mdi mdi-chevron-down theme--light"
+      >
+      </i>
+    </div>
+  </div>
+  <transition-stub name="expand-transition">
+    <div class="v-list-group__items">
+    </div>
+  </transition-stub>
+</div>
+`;
+
+exports[`LskBaseListGroup should match snapshot: one item, group collapsed 1`] = `
+<div class="v-list-group v-list-group--no-action">
+  <div tabindex="0"
+       aria-expanded="false"
+       role="button"
+       class="v-list-group__header v-list-item v-list-item--link theme--light"
+  >
+    <div id="TEST_ACTIVATOR_ID"
+         class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold"
+    >
+      TEST TITLE
+    </div>
+    <div class="v-list-item__icon v-list-group__header__append-icon">
+      <i aria-hidden="true"
+         class="v-icon notranslate mdi mdi-chevron-down theme--light"
+      >
+      </i>
+    </div>
+  </div>
+  <transition-stub name="expand-transition">
+  </transition-stub>
+</div>
+`;
+
+exports[`LskBaseListGroup should match snapshot: one item, group expanded 1`] = `
+<div class="v-list-group v-list-group--active v-list-group--no-action primary--text"
+     value="true"
+>
+  <div tabindex="0"
+       aria-expanded="true"
+       role="button"
+       class="v-list-group__header v-list-item v-list-item--active v-list-item--link theme--light"
+  >
+    <div id="TEST_ACTIVATOR_ID"
+         class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold"
+    >
+      TEST TITLE
+    </div>
+    <div class="v-list-item__icon v-list-group__header__append-icon">
+      <i aria-hidden="true"
+         class="v-icon notranslate mdi mdi-chevron-down theme--light"
+      >
+      </i>
+    </div>
+  </div>
+  <transition-stub name="expand-transition">
+    <div class="v-list-group__items">
+      <div tabindex="-1"
+           id="TEST_PARENT_IDTestOneListItem"
+           class="v-list-item theme--light"
+      >
+        <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+          TEST TEXT ONE
+        </div>
+        <div class="v-list-item__content">
+          TEST VALUE ONE
+        </div>
+      </div>
+    </div>
+  </transition-stub>
+</div>
+`;
+
+exports[`LskBaseListGroup should match snapshot: two items, group collapsed 1`] = `
+<div class="v-list-group v-list-group--no-action">
+  <div tabindex="0"
+       aria-expanded="false"
+       role="button"
+       class="v-list-group__header v-list-item v-list-item--link theme--light"
+  >
+    <div id="TEST_ACTIVATOR_ID"
+         class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold"
+    >
+      TEST TITLE
+    </div>
+    <div class="v-list-item__icon v-list-group__header__append-icon">
+      <i aria-hidden="true"
+         class="v-icon notranslate mdi mdi-chevron-down theme--light"
+      >
+      </i>
+    </div>
+  </div>
+  <transition-stub name="expand-transition">
+  </transition-stub>
+</div>
+`;
+
+exports[`LskBaseListGroup should match snapshot: two items, group expanded 1`] = `
+<div class="v-list-group v-list-group--active v-list-group--no-action primary--text"
+     value="true"
+>
+  <div tabindex="0"
+       aria-expanded="true"
+       role="button"
+       class="v-list-group__header v-list-item v-list-item--active v-list-item--link theme--light"
+  >
+    <div id="TEST_ACTIVATOR_ID"
+         class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold"
+    >
+      TEST TITLE
+    </div>
+    <div class="v-list-item__icon v-list-group__header__append-icon">
+      <i aria-hidden="true"
+         class="v-icon notranslate mdi mdi-chevron-down theme--light"
+      >
+      </i>
+    </div>
+  </div>
+  <transition-stub name="expand-transition">
+    <div class="v-list-group__items">
+      <div tabindex="-1"
+           id="TEST_PARENT_IDTestOneListItem"
+           class="v-list-item theme--light"
+      >
+        <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+          TEST TEXT ONE
+        </div>
+        <div class="v-list-item__content">
+          TEST VALUE ONE
+        </div>
+      </div>
+      <div tabindex="-1"
+           id="TEST_PARENT_IDTestTwoListItem"
+           class="v-list-item theme--light"
+      >
+        <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+          TEST TEXT TWO
+        </div>
+        <div class="v-list-item__content">
+          TEST VALUE TWO
+        </div>
+      </div>
+    </div>
+  </transition-stub>
+</div>
+`;

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskBaseCard should match snapshot: content in default slot 1`] = `
+<div class="v-card v-sheet theme--light">
+  <hr role="separator"
+      aria-orientation="horizontal"
+      class="v-divider theme--light"
+  >
+  <div>
+    DEFAULT
+  </div>
+</div>
+`;
+
+exports[`LskBaseCard should match snapshot: content in default slot and in header slot 1`] = `
+<div class="v-card v-sheet theme--light">
+  <div>
+    HEADER
+  </div>
+  <hr role="separator"
+      aria-orientation="horizontal"
+      class="v-divider theme--light"
+  >
+  <div>
+    DEFAULT
+  </div>
+</div>
+`;
+
+exports[`LskBaseCard should match snapshot: content in header slot 1`] = `
+<div class="v-card v-sheet theme--light">
+  <div>
+    HEADER
+  </div>
+  <hr role="separator"
+      aria-orientation="horizontal"
+      class="v-divider theme--light"
+  >
+</div>
+`;
+
+exports[`LskBaseCard should match snapshot: no content in any slot 1`] = `
+<div class="v-card v-sheet theme--light">
+  <hr role="separator"
+      aria-orientation="horizontal"
+      class="v-divider theme--light"
+  >
+</div>
+`;

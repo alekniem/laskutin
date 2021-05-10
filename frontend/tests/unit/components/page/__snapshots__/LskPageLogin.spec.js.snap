@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskPageLogin should match snapshot 1`] = `
+<form novalidate="novalidate"
+      class="v-form"
+>
+  <div class="row">
+    <div class="col col-12">
+      <div class="v-card v-sheet theme--light"
+           style="max-width: 700px;"
+           max-width="700"
+      >
+        <header class="v-sheet theme--light v-toolbar v-toolbar--flat"
+                style="height: 64px;"
+        >
+          <div class="v-toolbar__content"
+               style="height: 64px;"
+          >
+            <div id="loginPageTitle"
+                 class="v-toolbar__title"
+            >
+              Login
+            </div>
+            <div class="spacer">
+            </div>
+          </div>
+        </header>
+        <hr role="separator"
+            aria-orientation="horizontal"
+            class="v-divider theme--light"
+        >
+        <div class="v-card__text">
+          <div class="row row--dense">
+            <div class="col">
+              <div class="v-input theme--light v-text-field">
+                <div class="v-input__control">
+                  <div class="v-input__slot">
+                    <div class="v-text-field__slot">
+                      <label for="loginPageUsernameField"
+                             class="v-label theme--light"
+                             style="left: 0px; position: absolute;"
+                      >
+                        Username
+                      </label>
+                      <input id="loginPageUsernameField"
+                             type="text"
+                      >
+                    </div>
+                  </div>
+                  <div class="v-text-field__details">
+                    <div class="v-messages theme--light">
+                      <transition-group-stub tag="div"
+                                             name="message-transition"
+                                             class="v-messages__wrapper"
+                      >
+                      </transition-group-stub>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="v-input theme--light v-text-field">
+                <div class="v-input__control">
+                  <div class="v-input__slot">
+                    <div class="v-text-field__slot">
+                      <label for="loginPagePasswordField"
+                             class="v-label theme--light"
+                             style="left: 0px; position: absolute;"
+                      >
+                        Password
+                      </label>
+                      <input id="loginPagePasswordField"
+                             type="password"
+                      >
+                    </div>
+                  </div>
+                  <div class="v-text-field__details">
+                    <div class="v-messages theme--light">
+                      <transition-group-stub tag="div"
+                                             name="message-transition"
+                                             class="v-messages__wrapper"
+                      >
+                      </transition-group-stub>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row--dense">
+            <div class="col">
+              <button type="button"
+                      class="v-btn v-btn--has-bg theme--light v-size--small primary"
+                      id="loginPageLoginButton"
+              >
+                <span class="v-btn__content">
+                  Login
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskBaseIcon should match snapshot 1`] = `
+<span class="v-tooltip v-tooltip--bottom">
+  <button type="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          class="v-icon notranslate v-icon--link mdi mdi-pencil theme--light mr-3"
+          style="font-size: 16px;"
+  >
+  </button>
+</span>
+`;

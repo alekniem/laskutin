@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskBaseToolbar should match snapshot: content in button slot 1`] = `
+<header class="v-sheet theme--light v-toolbar v-toolbar--flat"
+        style="height: 64px;"
+>
+  <div class="v-toolbar__content"
+       style="height: 64px;"
+  >
+    <div id="TEST_TITLE_ID"
+         class="v-toolbar__title"
+    >
+    </div>
+    <div class="spacer">
+    </div>
+    <div>
+      BUTTON
+    </div>
+  </div>
+</header>
+`;
+
+exports[`LskBaseToolbar should match snapshot: content in default slot 1`] = `
+<header class="v-sheet theme--light v-toolbar v-toolbar--flat"
+        style="height: 64px;"
+>
+  <div class="v-toolbar__content"
+       style="height: 64px;"
+  >
+    <div id="TEST_TITLE_ID"
+         class="v-toolbar__title"
+    >
+      <div>
+        DEFAULT
+      </div>
+    </div>
+    <div class="spacer">
+    </div>
+  </div>
+</header>
+`;
+
+exports[`LskBaseToolbar should match snapshot: content in default slot and in button slot 1`] = `
+<header class="v-sheet theme--light v-toolbar v-toolbar--flat"
+        style="height: 64px;"
+>
+  <div class="v-toolbar__content"
+       style="height: 64px;"
+  >
+    <div id="TEST_TITLE_ID"
+         class="v-toolbar__title"
+    >
+      <div>
+        DEFAULT
+      </div>
+    </div>
+    <div class="spacer">
+    </div>
+    <div>
+      BUTTON
+    </div>
+  </div>
+</header>
+`;
+
+exports[`LskBaseToolbar should match snapshot: no content in any slot 1`] = `
+<header class="v-sheet theme--light v-toolbar v-toolbar--flat"
+        style="height: 64px;"
+>
+  <div class="v-toolbar__content"
+       style="height: 64px;"
+  >
+    <div id="TEST_TITLE_ID"
+         class="v-toolbar__title"
+    >
+    </div>
+    <div class="spacer">
+    </div>
+  </div>
+</header>
+`;

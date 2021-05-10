@@ -1,0 +1,1520 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskPageShowInvoice should match snapshot: biller data visible 1`] = `
+<div>
+  <div class="row">
+    <div xs="12"
+         class="col-sm-8 col-md-7 col-lg-4 col-12"
+    >
+      <div class="v-card v-sheet theme--light">
+        <header class="v-sheet theme--light v-toolbar v-toolbar--flat"
+                style="height: 64px;"
+                id="invoiceShowPageToolbar"
+        >
+          <div class="v-toolbar__content"
+               style="height: 64px;"
+          >
+            <div id="invoiceShowPageTitle"
+                 class="v-toolbar__title"
+            >
+              Invoice information
+            </div>
+            <div class="spacer">
+            </div>
+            <div class="v-menu">
+            </div>
+            <button type="button"
+                    class="v-btn v-btn--icon v-btn--round theme--light v-size--default"
+                    id="invoiceShowPageMenuActivator"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+            >
+              <span class="v-btn__content">
+                <i aria-hidden="true"
+                   class="v-icon notranslate mdi mdi-dots-vertical theme--light"
+                >
+                </i>
+              </span>
+            </button>
+          </div>
+        </header>
+        <hr role="separator"
+            aria-orientation="horizontal"
+            class="v-divider theme--light"
+        >
+        <div role="list"
+             id="invoiceShowPageList"
+             class="v-list v-sheet theme--light v-list--dense"
+        >
+          <div tabindex="-1"
+               id="invoiceShowPageIdListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Invoice id
+            </div>
+            <div class="v-list-item__content">
+              123
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="invoiceShowPageInvoiceDateListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Invoice date
+            </div>
+            <div class="v-list-item__content">
+              1.1.2021
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="invoiceShowPageDueDateListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Due date
+            </div>
+            <div class="v-list-item__content">
+              2.2.2021
+            </div>
+          </div>
+          <div class="v-list-group v-list-group--no-action"
+               value="true"
+          >
+            <div tabindex="0"
+                 aria-expanded="false"
+                 role="button"
+                 class="v-list-group__header v-list-item v-list-item--link theme--light"
+            >
+              <div id="invoiceShowPageCustomerListActivator"
+                   class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold"
+              >
+                Customer
+              </div>
+              <div class="v-list-item__icon v-list-group__header__append-icon">
+                <i aria-hidden="true"
+                   class="v-icon notranslate mdi mdi-chevron-down theme--light"
+                >
+                </i>
+              </div>
+            </div>
+            <transition-stub name="expand-transition">
+              <div class="v-list-group__items"
+                   style="display: none;"
+              >
+                <div tabindex="-1"
+                     id="invoiceShowPageCustomerNameListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Name
+                  </div>
+                  <div class="v-list-item__content">
+                    CUSTOMER NAME
+                  </div>
+                </div>
+                <div tabindex="-1"
+                     id="invoiceShowPageCustomerAddressLineOneListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Address line 1
+                  </div>
+                  <div class="v-list-item__content">
+                    CUSTOMER ADDRESS LINE ONE
+                  </div>
+                </div>
+                <div tabindex="-1"
+                     id="invoiceShowPageCustomerAddressLineTwoListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Address line 2
+                  </div>
+                  <div class="v-list-item__content">
+                    CUSTOMER ADDRESS LINE TWO
+                  </div>
+                </div>
+              </div>
+            </transition-stub>
+          </div>
+          <div class="v-list-group v-list-group--active v-list-group--no-action primary--text">
+            <div tabindex="0"
+                 aria-expanded="true"
+                 role="button"
+                 class="v-list-group__header v-list-item v-list-item--active v-list-item--link theme--light"
+            >
+              <div id="invoiceShowPageBillerListActivator"
+                   class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold"
+              >
+                Biller
+              </div>
+              <div class="v-list-item__icon v-list-group__header__append-icon">
+                <i aria-hidden="true"
+                   class="v-icon notranslate mdi mdi-chevron-down theme--light"
+                >
+                </i>
+              </div>
+            </div>
+            <transition-stub name="expand-transition">
+              <div class="v-list-group__items"
+                   style
+              >
+                <div tabindex="-1"
+                     id="invoiceShowPageBillerNameListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Name
+                  </div>
+                  <div class="v-list-item__content">
+                    BILLER NAME
+                  </div>
+                </div>
+                <div tabindex="-1"
+                     id="invoiceShowPageBillerAddressLineOneListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Address line 1
+                  </div>
+                  <div class="v-list-item__content">
+                    BILLER ADDRESS LINE ONE
+                  </div>
+                </div>
+                <div tabindex="-1"
+                     id="invoiceShowPageBillerAddressLineTwoListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Address line 2
+                  </div>
+                  <div class="v-list-item__content">
+                    BILLER ADDRESS LINE TWO
+                  </div>
+                </div>
+                <div tabindex="-1"
+                     id="invoiceShowPageBillerEmailListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Email
+                  </div>
+                  <div class="v-list-item__content">
+                    BILLER EMAIL
+                  </div>
+                </div>
+                <div tabindex="-1"
+                     id="invoiceShowPageBillerPhoneNumberListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Phone number
+                  </div>
+                  <div class="v-list-item__content">
+                    BILLER PHONE NUMBER
+                  </div>
+                </div>
+                <div tabindex="-1"
+                     id="invoiceShowPageBillerBusinessIdentityCodeListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Business identity code
+                  </div>
+                  <div class="v-list-item__content">
+                    BILLER BUSINESS IDENTITY CODE
+                  </div>
+                </div>
+                <div tabindex="-1"
+                     id="invoiceShowPageBillerBankNameListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Bank name
+                  </div>
+                  <div class="v-list-item__content">
+                    BILLER BANK NAME
+                  </div>
+                </div>
+                <div tabindex="-1"
+                     id="invoiceShowPageBillerBankIbanListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Bank iban
+                  </div>
+                  <div class="v-list-item__content">
+                    BILLER BANK IBAN
+                  </div>
+                </div>
+                <div tabindex="-1"
+                     id="invoiceShowPageBillerBankBicListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Bank bic
+                  </div>
+                  <div class="v-list-item__content">
+                    BILLER BANK BIC
+                  </div>
+                </div>
+                <div tabindex="-1"
+                     id="invoiceShowPageBillerPdfTitleListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Pdf title
+                  </div>
+                  <div class="v-list-item__content">
+                    BILLER PDF TITLE
+                  </div>
+                </div>
+                <div tabindex="-1"
+                     id="invoiceShowPageBillerPdfAuthorListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Pdf author
+                  </div>
+                  <div class="v-list-item__content">
+                    BILLER PDF AUTHOR
+                  </div>
+                </div>
+              </div>
+            </transition-stub>
+          </div>
+          <div tabindex="-1"
+               id="invoiceShowPageInvoiceNumberListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Invoice number
+            </div>
+            <div class="v-list-item__content">
+              INVOICE NUMBER
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="invoiceShowPageReferenceNumberListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Reference number
+            </div>
+            <div class="v-list-item__content">
+              FORMATTED REFERENCE NUMBER
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="invoiceShowPageTotalAmountSumListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Total amount
+            </div>
+            <div class="v-list-item__content">
+              37,20&nbsp;€
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="invoiceShowPageCreatedAtListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Created
+            </div>
+            <div class="v-list-item__content">
+              1.1.2021 12:00:01
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="invoiceShowPageUpdatedAtListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Updated
+            </div>
+            <div class="v-list-item__content">
+              2.2.2021 12:00:02
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div xs="12"
+         class="col-sm-12 col-md-12 col-lg-9 col-12"
+    >
+      <div class="v-card v-sheet theme--light">
+        <header class="v-sheet theme--light v-toolbar v-toolbar--flat"
+                style="height: 64px;"
+                id="invoiceShowPageInvoiceLineToolbar"
+        >
+          <div class="v-toolbar__content"
+               style="height: 64px;"
+          >
+            <div id="invoiceShowPageInvoiceLineTitle"
+                 class="v-toolbar__title"
+            >
+              Invoice lines
+            </div>
+            <div class="spacer">
+            </div>
+            <div class="v-menu">
+            </div>
+            <button type="button"
+                    class="v-btn v-btn--icon v-btn--round theme--light v-size--default"
+                    id="invoiceShowPageInvoiceLineMenuActivator"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+            >
+              <span class="v-btn__content">
+                <i aria-hidden="true"
+                   class="v-icon notranslate mdi mdi-dots-vertical theme--light"
+                >
+                </i>
+              </span>
+            </button>
+          </div>
+        </header>
+        <hr role="separator"
+            aria-orientation="horizontal"
+            class="v-divider theme--light"
+        >
+        <div class="v-data-table v-data-table--dense theme--light"
+             id="invoiceShowPageInvoiceLineTable"
+             disable-pagination="true"
+             disable-sort="true"
+             hide-default-footer="true"
+        >
+          <div class="v-data-table__wrapper">
+            <table>
+              <colgroup>
+                <col class>
+                <col class>
+                <col class>
+                <col class>
+                <col class>
+                <col class>
+                <col class>
+              </colgroup>
+              <thead class="v-data-table-header">
+                <tr>
+                  <th role="columnheader"
+                      scope="col"
+                      aria-label="Id"
+                      class="text-start blue--text text--darken-2"
+                  >
+                    <span>
+                      Id
+                    </span>
+                  </th>
+                  <th role="columnheader"
+                      scope="col"
+                      aria-label="Description"
+                      class="text-start blue--text text--darken-2"
+                  >
+                    <span>
+                      Description
+                    </span>
+                  </th>
+                  <th role="columnheader"
+                      scope="col"
+                      aria-label="Amount"
+                      class="text-start blue--text text--darken-2"
+                  >
+                    <span>
+                      Amount
+                    </span>
+                  </th>
+                  <th role="columnheader"
+                      scope="col"
+                      aria-label="VAT percent"
+                      class="text-start blue--text text--darken-2"
+                  >
+                    <span>
+                      VAT percent
+                    </span>
+                  </th>
+                  <th role="columnheader"
+                      scope="col"
+                      aria-label="VAT amount"
+                      class="text-start blue--text text--darken-2"
+                  >
+                    <span>
+                      VAT amount
+                    </span>
+                  </th>
+                  <th role="columnheader"
+                      scope="col"
+                      aria-label="Total amount"
+                      class="text-start blue--text text--darken-2"
+                  >
+                    <span>
+                      Total amount
+                    </span>
+                  </th>
+                  <th role="columnheader"
+                      scope="col"
+                      aria-label="Actions"
+                      class="text-start blue--text text--darken-2"
+                  >
+                    <span>
+                      Actions
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class>
+                  <td class="text-start">
+                    1
+                  </td>
+                  <td class="text-start">
+                    DESCRIPTION 1
+                  </td>
+                  <td class="text-start">
+                    10,00&nbsp;€
+                  </td>
+                  <td class="text-start">
+                    24
+                  </td>
+                  <td class="text-start">
+                    2,40&nbsp;€
+                  </td>
+                  <td class="text-start">
+                    12,40&nbsp;€
+                  </td>
+                  <td class="text-start">
+                    <button type="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            class="v-icon notranslate v-icon--link mdi mdi-pencil theme--light mr-3"
+                            style="font-size: 16px;"
+                    >
+                    </button>
+                    <span class="v-tooltip v-tooltip--bottom">
+                    </span>
+                    <span class="v-tooltip v-tooltip--bottom">
+                    </span>
+                    <button type="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            class="v-icon notranslate v-icon--link mdi mdi-delete theme--light"
+                            style="font-size: 16px;"
+                    >
+                    </button>
+                  </td>
+                </tr>
+                <tr class>
+                  <td class="text-start">
+                    2
+                  </td>
+                  <td class="text-start">
+                    DESCRIPTION 2
+                  </td>
+                  <td class="text-start">
+                    20,00&nbsp;€
+                  </td>
+                  <td class="text-start">
+                    24
+                  </td>
+                  <td class="text-start">
+                    4,80&nbsp;€
+                  </td>
+                  <td class="text-start">
+                    24,80&nbsp;€
+                  </td>
+                  <td class="text-start">
+                    <button type="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            class="v-icon notranslate v-icon--link mdi mdi-pencil theme--light mr-3"
+                            style="font-size: 16px;"
+                    >
+                    </button>
+                    <span class="v-tooltip v-tooltip--bottom">
+                    </span>
+                    <span class="v-tooltip v-tooltip--bottom">
+                    </span>
+                    <button type="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            class="v-icon notranslate v-icon--link mdi mdi-delete theme--light"
+                            style="font-size: 16px;"
+                    >
+                    </button>
+                  </td>
+                </tr>
+                <tr class="grey--text text--darken-2 font-weight-bold">
+                  <td>
+                  </td>
+                  <td>
+                    TOTAL
+                  </td>
+                  <td>
+                    30,00&nbsp;€
+                  </td>
+                  <td>
+                  </td>
+                  <td>
+                    7,20&nbsp;€
+                  </td>
+                  <td>
+                    37,20&nbsp;€
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <lskdialogeditinvoice-stub cid="invoiceShowPageEditInvoiceDialog"
+                             currentdata="[object Object]"
+                             id="123"
+  >
+  </lskdialogeditinvoice-stub>
+  <lskdialogeditinvoicebiller-stub cid="invoiceShowPageEditInvoiceBillerDialog"
+                                   currentdata="[object Object]"
+                                   id="123"
+  >
+  </lskdialogeditinvoicebiller-stub>
+  <lskdialogeditinvoicecustomer-stub cid="invoiceShowPageEditInvoiceCustomerDialog"
+                                     currentdata="[object Object]"
+                                     id="123"
+  >
+  </lskdialogeditinvoicecustomer-stub>
+  <lskdialogaddoreditinvoiceline-stub cid="invoiceShowPageAddInvoiceLineDialog"
+                                      invoiceid="123"
+  >
+  </lskdialogaddoreditinvoiceline-stub>
+  <lskdialogaddoreditinvoiceline-stub cid="invoiceShowPageEditInvoiceLineDialog"
+                                      invoiceid="123"
+  >
+  </lskdialogaddoreditinvoiceline-stub>
+  <lskdialogdelete-stub cid="invoiceShowPageDeleteInvoiceLineDialog"
+                        apiactionname="invoiceLineDestroy"
+                        checkboxlabel="Yes, delete invoice line"
+                        title="Delete invoice line"
+  >
+  </lskdialogdelete-stub>
+</div>
+`;
+
+exports[`LskPageShowInvoice should match snapshot: customer data visible 1`] = `
+<div>
+  <div class="row">
+    <div xs="12"
+         class="col-sm-8 col-md-7 col-lg-4 col-12"
+    >
+      <div class="v-card v-sheet theme--light">
+        <header class="v-sheet theme--light v-toolbar v-toolbar--flat"
+                style="height: 64px;"
+                id="invoiceShowPageToolbar"
+        >
+          <div class="v-toolbar__content"
+               style="height: 64px;"
+          >
+            <div id="invoiceShowPageTitle"
+                 class="v-toolbar__title"
+            >
+              Invoice information
+            </div>
+            <div class="spacer">
+            </div>
+            <div class="v-menu">
+            </div>
+            <button type="button"
+                    class="v-btn v-btn--icon v-btn--round theme--light v-size--default"
+                    id="invoiceShowPageMenuActivator"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+            >
+              <span class="v-btn__content">
+                <i aria-hidden="true"
+                   class="v-icon notranslate mdi mdi-dots-vertical theme--light"
+                >
+                </i>
+              </span>
+            </button>
+          </div>
+        </header>
+        <hr role="separator"
+            aria-orientation="horizontal"
+            class="v-divider theme--light"
+        >
+        <div role="list"
+             id="invoiceShowPageList"
+             class="v-list v-sheet theme--light v-list--dense"
+        >
+          <div tabindex="-1"
+               id="invoiceShowPageIdListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Invoice id
+            </div>
+            <div class="v-list-item__content">
+              123
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="invoiceShowPageInvoiceDateListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Invoice date
+            </div>
+            <div class="v-list-item__content">
+              1.1.2021
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="invoiceShowPageDueDateListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Due date
+            </div>
+            <div class="v-list-item__content">
+              2.2.2021
+            </div>
+          </div>
+          <div class="v-list-group v-list-group--active v-list-group--no-action primary--text"
+               value="true"
+          >
+            <div tabindex="0"
+                 aria-expanded="true"
+                 role="button"
+                 class="v-list-group__header v-list-item v-list-item--active v-list-item--link theme--light"
+            >
+              <div id="invoiceShowPageCustomerListActivator"
+                   class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold"
+              >
+                Customer
+              </div>
+              <div class="v-list-item__icon v-list-group__header__append-icon">
+                <i aria-hidden="true"
+                   class="v-icon notranslate mdi mdi-chevron-down theme--light"
+                >
+                </i>
+              </div>
+            </div>
+            <transition-stub name="expand-transition">
+              <div class="v-list-group__items">
+                <div tabindex="-1"
+                     id="invoiceShowPageCustomerNameListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Name
+                  </div>
+                  <div class="v-list-item__content">
+                    CUSTOMER NAME
+                  </div>
+                </div>
+                <div tabindex="-1"
+                     id="invoiceShowPageCustomerAddressLineOneListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Address line 1
+                  </div>
+                  <div class="v-list-item__content">
+                    CUSTOMER ADDRESS LINE ONE
+                  </div>
+                </div>
+                <div tabindex="-1"
+                     id="invoiceShowPageCustomerAddressLineTwoListItem"
+                     role="listitem"
+                     class="v-list-item theme--light"
+                >
+                  <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+                    Address line 2
+                  </div>
+                  <div class="v-list-item__content">
+                    CUSTOMER ADDRESS LINE TWO
+                  </div>
+                </div>
+              </div>
+            </transition-stub>
+          </div>
+          <div class="v-list-group v-list-group--no-action">
+            <div tabindex="0"
+                 aria-expanded="false"
+                 role="button"
+                 class="v-list-group__header v-list-item v-list-item--link theme--light"
+            >
+              <div id="invoiceShowPageBillerListActivator"
+                   class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold"
+              >
+                Biller
+              </div>
+              <div class="v-list-item__icon v-list-group__header__append-icon">
+                <i aria-hidden="true"
+                   class="v-icon notranslate mdi mdi-chevron-down theme--light"
+                >
+                </i>
+              </div>
+            </div>
+            <transition-stub name="expand-transition">
+            </transition-stub>
+          </div>
+          <div tabindex="-1"
+               id="invoiceShowPageInvoiceNumberListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Invoice number
+            </div>
+            <div class="v-list-item__content">
+              INVOICE NUMBER
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="invoiceShowPageReferenceNumberListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Reference number
+            </div>
+            <div class="v-list-item__content">
+              FORMATTED REFERENCE NUMBER
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="invoiceShowPageTotalAmountSumListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Total amount
+            </div>
+            <div class="v-list-item__content">
+              37,20&nbsp;€
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="invoiceShowPageCreatedAtListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Created
+            </div>
+            <div class="v-list-item__content">
+              1.1.2021 12:00:01
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="invoiceShowPageUpdatedAtListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Updated
+            </div>
+            <div class="v-list-item__content">
+              2.2.2021 12:00:02
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div xs="12"
+         class="col-sm-12 col-md-12 col-lg-9 col-12"
+    >
+      <div class="v-card v-sheet theme--light">
+        <header class="v-sheet theme--light v-toolbar v-toolbar--flat"
+                style="height: 64px;"
+                id="invoiceShowPageInvoiceLineToolbar"
+        >
+          <div class="v-toolbar__content"
+               style="height: 64px;"
+          >
+            <div id="invoiceShowPageInvoiceLineTitle"
+                 class="v-toolbar__title"
+            >
+              Invoice lines
+            </div>
+            <div class="spacer">
+            </div>
+            <div class="v-menu">
+            </div>
+            <button type="button"
+                    class="v-btn v-btn--icon v-btn--round theme--light v-size--default"
+                    id="invoiceShowPageInvoiceLineMenuActivator"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+            >
+              <span class="v-btn__content">
+                <i aria-hidden="true"
+                   class="v-icon notranslate mdi mdi-dots-vertical theme--light"
+                >
+                </i>
+              </span>
+            </button>
+          </div>
+        </header>
+        <hr role="separator"
+            aria-orientation="horizontal"
+            class="v-divider theme--light"
+        >
+        <div class="v-data-table v-data-table--dense theme--light"
+             id="invoiceShowPageInvoiceLineTable"
+             disable-pagination="true"
+             disable-sort="true"
+             hide-default-footer="true"
+        >
+          <div class="v-data-table__wrapper">
+            <table>
+              <colgroup>
+                <col class>
+                <col class>
+                <col class>
+                <col class>
+                <col class>
+                <col class>
+                <col class>
+              </colgroup>
+              <thead class="v-data-table-header">
+                <tr>
+                  <th role="columnheader"
+                      scope="col"
+                      aria-label="Id"
+                      class="text-start blue--text text--darken-2"
+                  >
+                    <span>
+                      Id
+                    </span>
+                  </th>
+                  <th role="columnheader"
+                      scope="col"
+                      aria-label="Description"
+                      class="text-start blue--text text--darken-2"
+                  >
+                    <span>
+                      Description
+                    </span>
+                  </th>
+                  <th role="columnheader"
+                      scope="col"
+                      aria-label="Amount"
+                      class="text-start blue--text text--darken-2"
+                  >
+                    <span>
+                      Amount
+                    </span>
+                  </th>
+                  <th role="columnheader"
+                      scope="col"
+                      aria-label="VAT percent"
+                      class="text-start blue--text text--darken-2"
+                  >
+                    <span>
+                      VAT percent
+                    </span>
+                  </th>
+                  <th role="columnheader"
+                      scope="col"
+                      aria-label="VAT amount"
+                      class="text-start blue--text text--darken-2"
+                  >
+                    <span>
+                      VAT amount
+                    </span>
+                  </th>
+                  <th role="columnheader"
+                      scope="col"
+                      aria-label="Total amount"
+                      class="text-start blue--text text--darken-2"
+                  >
+                    <span>
+                      Total amount
+                    </span>
+                  </th>
+                  <th role="columnheader"
+                      scope="col"
+                      aria-label="Actions"
+                      class="text-start blue--text text--darken-2"
+                  >
+                    <span>
+                      Actions
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class>
+                  <td class="text-start">
+                    1
+                  </td>
+                  <td class="text-start">
+                    DESCRIPTION 1
+                  </td>
+                  <td class="text-start">
+                    10,00&nbsp;€
+                  </td>
+                  <td class="text-start">
+                    24
+                  </td>
+                  <td class="text-start">
+                    2,40&nbsp;€
+                  </td>
+                  <td class="text-start">
+                    12,40&nbsp;€
+                  </td>
+                  <td class="text-start">
+                    <button type="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            class="v-icon notranslate v-icon--link mdi mdi-pencil theme--light mr-3"
+                            style="font-size: 16px;"
+                    >
+                    </button>
+                    <span class="v-tooltip v-tooltip--bottom">
+                    </span>
+                    <span class="v-tooltip v-tooltip--bottom">
+                    </span>
+                    <button type="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            class="v-icon notranslate v-icon--link mdi mdi-delete theme--light"
+                            style="font-size: 16px;"
+                    >
+                    </button>
+                  </td>
+                </tr>
+                <tr class>
+                  <td class="text-start">
+                    2
+                  </td>
+                  <td class="text-start">
+                    DESCRIPTION 2
+                  </td>
+                  <td class="text-start">
+                    20,00&nbsp;€
+                  </td>
+                  <td class="text-start">
+                    24
+                  </td>
+                  <td class="text-start">
+                    4,80&nbsp;€
+                  </td>
+                  <td class="text-start">
+                    24,80&nbsp;€
+                  </td>
+                  <td class="text-start">
+                    <button type="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            class="v-icon notranslate v-icon--link mdi mdi-pencil theme--light mr-3"
+                            style="font-size: 16px;"
+                    >
+                    </button>
+                    <span class="v-tooltip v-tooltip--bottom">
+                    </span>
+                    <span class="v-tooltip v-tooltip--bottom">
+                    </span>
+                    <button type="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            class="v-icon notranslate v-icon--link mdi mdi-delete theme--light"
+                            style="font-size: 16px;"
+                    >
+                    </button>
+                  </td>
+                </tr>
+                <tr class="grey--text text--darken-2 font-weight-bold">
+                  <td>
+                  </td>
+                  <td>
+                    TOTAL
+                  </td>
+                  <td>
+                    30,00&nbsp;€
+                  </td>
+                  <td>
+                  </td>
+                  <td>
+                    7,20&nbsp;€
+                  </td>
+                  <td>
+                    37,20&nbsp;€
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <lskdialogeditinvoice-stub cid="invoiceShowPageEditInvoiceDialog"
+                             currentdata="[object Object]"
+                             id="123"
+  >
+  </lskdialogeditinvoice-stub>
+  <lskdialogeditinvoicebiller-stub cid="invoiceShowPageEditInvoiceBillerDialog"
+                                   currentdata="[object Object]"
+                                   id="123"
+  >
+  </lskdialogeditinvoicebiller-stub>
+  <lskdialogeditinvoicecustomer-stub cid="invoiceShowPageEditInvoiceCustomerDialog"
+                                     currentdata="[object Object]"
+                                     id="123"
+  >
+  </lskdialogeditinvoicecustomer-stub>
+  <lskdialogaddoreditinvoiceline-stub cid="invoiceShowPageAddInvoiceLineDialog"
+                                      invoiceid="123"
+  >
+  </lskdialogaddoreditinvoiceline-stub>
+  <lskdialogaddoreditinvoiceline-stub cid="invoiceShowPageEditInvoiceLineDialog"
+                                      invoiceid="123"
+  >
+  </lskdialogaddoreditinvoiceline-stub>
+  <lskdialogdelete-stub cid="invoiceShowPageDeleteInvoiceLineDialog"
+                        apiactionname="invoiceLineDestroy"
+                        checkboxlabel="Yes, delete invoice line"
+                        title="Delete invoice line"
+  >
+  </lskdialogdelete-stub>
+</div>
+`;
+
+exports[`LskPageShowInvoice should match snapshot: data 1`] = `
+Object {
+  "actions": Array [
+    Object {
+      "clickFunction": [Function],
+      "iconName": "mdi-pencil",
+      "title": "Edit",
+    },
+    Object {
+      "clickFunction": [Function],
+      "iconName": "mdi-delete",
+      "title": "Delete",
+    },
+  ],
+  "amountSum": "3000",
+  "apiActionName": "invoiceShow",
+  "billerData": Object {
+    "biller_address_line_one": Object {
+      "text": "Address line 1",
+      "value": "BILLER ADDRESS LINE ONE",
+    },
+    "biller_address_line_two": Object {
+      "text": "Address line 2",
+      "value": "BILLER ADDRESS LINE TWO",
+    },
+    "biller_bank_bic": Object {
+      "text": "Bank bic",
+      "value": "BILLER BANK BIC",
+    },
+    "biller_bank_iban": Object {
+      "text": "Bank iban",
+      "value": "BILLER BANK IBAN",
+    },
+    "biller_bank_name": Object {
+      "text": "Bank name",
+      "value": "BILLER BANK NAME",
+    },
+    "biller_business_identity_code": Object {
+      "text": "Business identity code",
+      "value": "BILLER BUSINESS IDENTITY CODE",
+    },
+    "biller_email": Object {
+      "text": "Email",
+      "value": "BILLER EMAIL",
+    },
+    "biller_name": Object {
+      "text": "Name",
+      "value": "BILLER NAME",
+    },
+    "biller_pdf_author": Object {
+      "text": "Pdf author",
+      "value": "BILLER PDF AUTHOR",
+    },
+    "biller_pdf_title": Object {
+      "text": "Pdf title",
+      "value": "BILLER PDF TITLE",
+    },
+    "biller_phone_number": Object {
+      "text": "Phone number",
+      "value": "BILLER PHONE NUMBER",
+    },
+  },
+  "cid": "invoiceShowPage",
+  "counterAddInvoiceLine": 0,
+  "counterDeleteInvoiceLine": 0,
+  "counterEditInvoice": 0,
+  "counterEditInvoiceBiller": 0,
+  "counterEditInvoiceCustomer": 0,
+  "counterEditInvoiceLine": 0,
+  "customerData": Object {
+    "customer_address_line_one": Object {
+      "text": "Address line 1",
+      "value": "CUSTOMER ADDRESS LINE ONE",
+    },
+    "customer_address_line_two": Object {
+      "text": "Address line 2",
+      "value": "CUSTOMER ADDRESS LINE TWO",
+    },
+    "customer_name": Object {
+      "text": "Name",
+      "value": "CUSTOMER NAME",
+    },
+  },
+  "errorMessage": null,
+  "headings": Object {
+    "amount": "Amount",
+    "description": "Description",
+    "id": "Id",
+    "total_amount": "Total amount",
+    "vat_amount": "VAT amount",
+    "vat_percent": "VAT percent",
+  },
+  "invoiceDataOne": Object {
+    "due_date": Object {
+      "text": "Due date",
+      "value": "2.2.2021",
+    },
+    "id": Object {
+      "text": "Invoice id",
+      "value": 123,
+    },
+    "invoice_date": Object {
+      "text": "Invoice date",
+      "value": "1.1.2021",
+    },
+  },
+  "invoiceDataTwo": Object {
+    "created_at": Object {
+      "text": "Created",
+      "value": "1.1.2021 12:00:01",
+    },
+    "invoice_number": Object {
+      "text": "Invoice number",
+      "value": "INVOICE NUMBER",
+    },
+    "reference_number": Object {
+      "text": "Reference number",
+      "value": "FORMATTED REFERENCE NUMBER",
+    },
+    "total_amount_sum": Object {
+      "text": "Total amount",
+      "value": "37,20 €",
+    },
+    "updated_at": Object {
+      "text": "Updated",
+      "value": "2.2.2021 12:00:02",
+    },
+  },
+  "invoiceLineData": Array [
+    Object {
+      "amount": "1000",
+      "description": "DESCRIPTION 1",
+      "id": 1,
+      "invoice_id": 123,
+      "total_amount": "1240",
+      "vat_amount": "240",
+      "vat_percent": "24",
+    },
+    Object {
+      "amount": "2000",
+      "description": "DESCRIPTION 2",
+      "id": 2,
+      "invoice_id": 123,
+      "total_amount": "2480",
+      "vat_amount": "480",
+      "vat_percent": "24",
+    },
+  ],
+  "rawData": Object {
+    "amount_sum": "3000",
+    "biller_address_line_one": "BILLER ADDRESS LINE ONE",
+    "biller_address_line_two": "BILLER ADDRESS LINE TWO",
+    "biller_bank_bic": "BILLER BANK BIC",
+    "biller_bank_iban": "BILLER BANK IBAN",
+    "biller_bank_name": "BILLER BANK NAME",
+    "biller_business_identity_code": "BILLER BUSINESS IDENTITY CODE",
+    "biller_email": "BILLER EMAIL",
+    "biller_name": "BILLER NAME",
+    "biller_pdf_author": "BILLER PDF AUTHOR",
+    "biller_pdf_title": "BILLER PDF TITLE",
+    "biller_phone_number": "BILLER PHONE NUMBER",
+    "created_at": "2021-01-01 12:00:01",
+    "customer_address_line_one": "CUSTOMER ADDRESS LINE ONE",
+    "customer_address_line_two": "CUSTOMER ADDRESS LINE TWO",
+    "customer_name": "CUSTOMER NAME",
+    "due_date": "2021-02-02",
+    "formatted_reference_number": "FORMATTED REFERENCE NUMBER",
+    "id": 123,
+    "invoice_date": "2021-01-01",
+    "invoice_lines": Array [
+      Object {
+        "amount": "1000",
+        "description": "DESCRIPTION 1",
+        "id": 1,
+        "invoice_id": 123,
+        "total_amount": "1240",
+        "vat_amount": "240",
+        "vat_percent": "24",
+      },
+      Object {
+        "amount": "2000",
+        "description": "DESCRIPTION 2",
+        "id": 2,
+        "invoice_id": 123,
+        "total_amount": "2480",
+        "vat_amount": "480",
+        "vat_percent": "24",
+      },
+    ],
+    "invoice_number": "INVOICE NUMBER",
+    "total_amount_sum": "3720",
+    "updated_at": "2021-02-02 12:00:02",
+    "vat_amount_sum": "720",
+  },
+  "selectedInvoiceLineData": null,
+  "selectedInvoiceLineId": null,
+  "showAddInvoiceLine": false,
+  "showDeleteInvoiceLine": false,
+  "showEditInvoice": false,
+  "showEditInvoiceBiller": false,
+  "showEditInvoiceCustomer": false,
+  "showEditInvoiceLine": false,
+  "totalAmountSum": "3720",
+  "vatAmountSum": "720",
+}
+`;
+
+exports[`LskPageShowInvoice should match snapshot: dialog add invoice line 1`] = `
+<lskdialogaddoreditinvoiceline-stub cid="invoiceShowPageAddInvoiceLineDialog"
+                                    invoiceid="123"
+                                    value="true"
+>
+</lskdialogaddoreditinvoiceline-stub>
+`;
+
+exports[`LskPageShowInvoice should match snapshot: dialog delete invoice line 1`] = `
+<lskdialogdelete-stub cid="invoiceShowPageDeleteInvoiceLineDialog"
+                      id="1"
+                      apiactionname="invoiceLineDestroy"
+                      checkboxlabel="Yes, delete invoice line"
+                      title="Delete invoice line"
+                      value="true"
+>
+</lskdialogdelete-stub>
+`;
+
+exports[`LskPageShowInvoice should match snapshot: dialog edit invoice 1`] = `
+<lskdialogeditinvoice-stub cid="invoiceShowPageEditInvoiceDialog"
+                           currentdata="[object Object]"
+                           id="123"
+                           value="true"
+>
+</lskdialogeditinvoice-stub>
+`;
+
+exports[`LskPageShowInvoice should match snapshot: dialog edit invoice biller 1`] = `
+<lskdialogeditinvoicebiller-stub cid="invoiceShowPageEditInvoiceBillerDialog"
+                                 currentdata="[object Object]"
+                                 id="123"
+                                 value="true"
+>
+</lskdialogeditinvoicebiller-stub>
+`;
+
+exports[`LskPageShowInvoice should match snapshot: dialog edit invoice customer 1`] = `
+<lskdialogeditinvoicecustomer-stub cid="invoiceShowPageEditInvoiceCustomerDialog"
+                                   currentdata="[object Object]"
+                                   id="123"
+                                   value="true"
+>
+</lskdialogeditinvoicecustomer-stub>
+`;
+
+exports[`LskPageShowInvoice should match snapshot: dialog edit invoice line 1`] = `
+<lskdialogaddoreditinvoiceline-stub cid="invoiceShowPageAddInvoiceLineDialog"
+                                    invoiceid="123"
+>
+</lskdialogaddoreditinvoiceline-stub>
+`;
+
+exports[`LskPageShowInvoice should match snapshot: invoice information toolbar 1`] = `
+<header class="v-sheet theme--light v-toolbar v-toolbar--flat"
+        style="height: 64px;"
+        id="invoiceShowPageToolbar"
+>
+  <div class="v-toolbar__content"
+       style="height: 64px;"
+  >
+    <div id="invoiceShowPageTitle"
+         class="v-toolbar__title"
+    >
+      Invoice information
+    </div>
+    <div class="spacer">
+    </div>
+    <div class="v-menu">
+      <transition-stub name="v-menu-transition">
+        <div role="menu"
+             class="v-menu__content theme--light menuable__content__active "
+             style="max-height: auto; min-width: 0px; max-width: auto; top: 12px; left: 12px; transform-origin: top left; z-index: 8; display: none;"
+        >
+          <div class="v-list v-sheet theme--light">
+            <div tabindex="0"
+                 id="invoiceShowPageDownloadPdfMenuItem"
+                 role="menuitem"
+                 class="v-list-item v-list-item--link theme--light"
+            >
+              <div class="v-list-item__title">
+                Download PDF
+              </div>
+            </div>
+            <div tabindex="0"
+                 id="invoiceShowPageEditInvoiceMenuItem"
+                 role="menuitem"
+                 class="v-list-item v-list-item--link theme--light"
+            >
+              <div class="v-list-item__title">
+                Edit invoice
+              </div>
+            </div>
+            <div tabindex="0"
+                 id="invoiceShowPageEditInvoiceCustomerMenuItem"
+                 role="menuitem"
+                 class="v-list-item v-list-item--link theme--light"
+            >
+              <div class="v-list-item__title">
+                Edit customer
+              </div>
+            </div>
+            <div tabindex="0"
+                 id="invoiceShowPageEditInvoiceBillerMenuItem"
+                 role="menuitem"
+                 class="v-list-item v-list-item--link theme--light"
+            >
+              <div class="v-list-item__title">
+                Edit biller
+              </div>
+            </div>
+          </div>
+        </div>
+      </transition-stub>
+    </div>
+    <button type="button"
+            class="v-btn v-btn--icon v-btn--round theme--light v-size--default"
+            id="invoiceShowPageMenuActivator"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="true"
+    >
+      <span class="v-btn__content">
+        <i aria-hidden="true"
+           class="v-icon notranslate mdi mdi-dots-vertical theme--light"
+        >
+        </i>
+      </span>
+    </button>
+  </div>
+</header>
+`;
+
+exports[`LskPageShowInvoice should match snapshot: invoice line toolbar 1`] = `
+<header class="v-sheet theme--light v-toolbar v-toolbar--flat"
+        style="height: 64px;"
+        id="invoiceShowPageInvoiceLineToolbar"
+>
+  <div class="v-toolbar__content"
+       style="height: 64px;"
+  >
+    <div id="invoiceShowPageInvoiceLineTitle"
+         class="v-toolbar__title"
+    >
+      Invoice lines
+    </div>
+    <div class="spacer">
+    </div>
+    <div class="v-menu">
+      <transition-stub name="v-menu-transition">
+        <div role="menu"
+             class="v-menu__content theme--light menuable__content__active "
+             style="max-height: auto; min-width: 0px; max-width: auto; top: 12px; left: 12px; transform-origin: top left; z-index: 8; display: none;"
+        >
+          <div class="v-list v-sheet theme--light">
+            <div tabindex="0"
+                 id="invoiceShowPageAddInvoiceLineMenuItem"
+                 role="menuitem"
+                 class="v-list-item v-list-item--link theme--light"
+            >
+              <div class="v-list-item__title">
+                Add new invoice line
+              </div>
+            </div>
+          </div>
+        </div>
+      </transition-stub>
+    </div>
+    <button type="button"
+            class="v-btn v-btn--icon v-btn--round theme--light v-size--default"
+            id="invoiceShowPageInvoiceLineMenuActivator"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="true"
+    >
+      <span class="v-btn__content">
+        <i aria-hidden="true"
+           class="v-icon notranslate mdi mdi-dots-vertical theme--light"
+        >
+        </i>
+      </span>
+    </button>
+  </div>
+</header>
+`;

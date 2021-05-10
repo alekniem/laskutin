@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskBaseList should match snapshot: content in default slot 1`] = `
+<div role="list"
+     id="TEST_CID"
+     class="v-list v-sheet theme--light v-list--dense"
+>
+  <div>
+    DEFAULT
+  </div>
+</div>
+`;
+
+exports[`LskBaseList should match snapshot: no content in default slot 1`] = `
+<div role="list"
+     id="TEST_CID"
+     class="v-list v-sheet theme--light v-list--dense"
+>
+</div>
+`;

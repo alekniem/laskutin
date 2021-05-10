@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskInputButton should match snapshot: default values 1`] = `
+<button type="button"
+        class="v-btn v-btn--has-bg theme--light v-size--small primary"
+        id="TEST_CID"
+>
+  <span class="v-btn__content">
+    TEST BUTTON TEXT
+  </span>
+</button>
+`;
+
+exports[`LskInputButton should match snapshot: disabled 1`] = `
+<button type="button"
+        disabled="disabled"
+        class="v-btn v-btn--disabled v-btn--has-bg theme--light v-size--small"
+        id="TEST_CID"
+>
+  <span class="v-btn__content">
+    TEST BUTTON TEXT
+  </span>
+</button>
+`;
+
+exports[`LskInputButton should match snapshot: purple color 1`] = `
+<button type="button"
+        class="v-btn v-btn--has-bg theme--light v-size--small purple"
+        id="TEST_CID"
+>
+  <span class="v-btn__content">
+    TEST BUTTON TEXT
+  </span>
+</button>
+`;

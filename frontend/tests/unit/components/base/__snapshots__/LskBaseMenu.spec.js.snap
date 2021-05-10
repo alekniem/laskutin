@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskBaseMenu should match snapshot: content in default slot, menu hidden 1`] = `
+<div class="v-menu">
+  <button type="button"
+          class="v-btn v-btn--icon v-btn--round theme--light v-size--default"
+          id="TEST_ACTIVATOR_ID"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+  >
+    <span class="v-btn__content">
+      <i aria-hidden="true"
+         class="v-icon notranslate mdi mdi-dots-vertical theme--light"
+      >
+      </i>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`LskBaseMenu should match snapshot: content in default slot, menu visible 1`] = `
+<div class="v-menu">
+  <button type="button"
+          class="v-btn v-btn--icon v-btn--round theme--light v-size--default"
+          id="TEST_ACTIVATOR_ID"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="true"
+  >
+    <span class="v-btn__content">
+      <i aria-hidden="true"
+         class="v-icon notranslate mdi mdi-dots-vertical theme--light"
+      >
+      </i>
+    </span>
+  </button>
+  <transition-stub name="v-menu-transition">
+    <div role="menu"
+         class="v-menu__content theme--light menuable__content__active "
+         style="max-height: auto; min-width: 0px; max-width: auto; top: 12px; left: 12px; transform-origin: top left; z-index: 8; display: none;"
+    >
+      <div class="v-list v-sheet theme--light">
+        <div>
+          DEFAULT
+        </div>
+      </div>
+    </div>
+  </transition-stub>
+</div>
+`;
+
+exports[`LskBaseMenu should match snapshot: no content in default slot, menu hidden 1`] = `
+<div class="v-menu">
+  <button type="button"
+          class="v-btn v-btn--icon v-btn--round theme--light v-size--default"
+          id="TEST_ACTIVATOR_ID"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+  >
+    <span class="v-btn__content">
+      <i aria-hidden="true"
+         class="v-icon notranslate mdi mdi-dots-vertical theme--light"
+      >
+      </i>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`LskBaseMenu should match snapshot: no content in default slot, menu visible 1`] = `
+<div class="v-menu">
+  <button type="button"
+          class="v-btn v-btn--icon v-btn--round theme--light v-size--default"
+          id="TEST_ACTIVATOR_ID"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="true"
+  >
+    <span class="v-btn__content">
+      <i aria-hidden="true"
+         class="v-icon notranslate mdi mdi-dots-vertical theme--light"
+      >
+      </i>
+    </span>
+  </button>
+  <transition-stub name="v-menu-transition">
+    <div role="menu"
+         class="v-menu__content theme--light menuable__content__active "
+         style="max-height: auto; min-width: 0px; max-width: auto; top: 12px; left: 12px; transform-origin: top left; z-index: 8; display: none;"
+    >
+      <div class="v-list v-sheet theme--light">
+      </div>
+    </div>
+  </transition-stub>
+</div>
+`;

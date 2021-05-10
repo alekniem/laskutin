@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lsk_routes should match snapshot 1`] = `
+Array [
+  Object {
+    "name": "index",
+    "path": "/",
+  },
+  Object {
+    "component": Object {
+      "name": "LskPageLogin",
+    },
+    "name": "login",
+    "path": "/login",
+  },
+  Object {
+    "component": Object {
+      "name": "LskPageIndexBiller",
+    },
+    "name": "indexBiller",
+    "path": "/biller",
+  },
+  Object {
+    "component": Object {
+      "name": "LskPageShowBiller",
+    },
+    "name": "showBiller",
+    "path": "/biller/:id",
+    "props": true,
+  },
+  Object {
+    "component": Object {
+      "name": "LskPageIndexCustomer",
+    },
+    "name": "indexCustomer",
+    "path": "/customer",
+  },
+  Object {
+    "component": Object {
+      "name": "LskPageShowCustomer",
+    },
+    "name": "showCustomer",
+    "path": "/customer/:id",
+    "props": true,
+  },
+  Object {
+    "component": Object {
+      "name": "LskPageIndexInvoice",
+    },
+    "name": "indexInvoice",
+    "path": "/invoice",
+  },
+  Object {
+    "component": Object {
+      "name": "LskPageShowInvoice",
+    },
+    "name": "showInvoice",
+    "path": "/invoice/:id",
+    "props": true,
+  },
+  Object {
+    "component": Object {
+      "name": "LskPageNotFound",
+    },
+    "path": "*",
+  },
+]
+`;

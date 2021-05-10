@@ -1,0 +1,272 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskPageShowBiller should match snapshot: dialog edit biller 1`] = `
+<lskdialogaddoreditbiller-stub cid="billerShowPageEditBillerDialog"
+                               currentdata="[object Object]"
+                               id="123"
+                               value="true"
+>
+</lskdialogaddoreditbiller-stub>
+`;
+
+exports[`LskPageShowBiller should match snapshot: error 1`] = `
+<div>
+  <div class="red--text font-weight-bold">
+    GET QUERY ERROR
+  </div>
+  <lskdialogaddoreditbiller-stub cid="billerShowPageEditBillerDialog"
+                                 currentdata="[object Object]"
+                                 id="INVALID"
+  >
+  </lskdialogaddoreditbiller-stub>
+</div>
+`;
+
+exports[`LskPageShowBiller should match snapshot: menu 1`] = `
+<div class="v-menu">
+  <transition-stub name="v-menu-transition">
+    <div role="menu"
+         class="v-menu__content theme--light menuable__content__active "
+         style="max-height: auto; min-width: 0px; max-width: auto; top: 12px; left: 12px; transform-origin: top left; z-index: 8; display: none;"
+    >
+      <div class="v-list v-sheet theme--light">
+        <div tabindex="0"
+             id="billerShowPageEditBillerMenuItem"
+             role="menuitem"
+             class="v-list-item v-list-item--link theme--light"
+        >
+          <div class="v-list-item__title">
+            Edit biller
+          </div>
+        </div>
+      </div>
+    </div>
+  </transition-stub>
+</div>
+`;
+
+exports[`LskPageShowBiller should match snapshot: page 1`] = `
+<div>
+  <div class="row">
+    <div xs="12"
+         class="col-sm-8 col-md-7 col-lg-4 col-12"
+    >
+      <div class="v-card v-sheet theme--light">
+        <header class="v-sheet theme--light v-toolbar v-toolbar--flat"
+                style="height: 64px;"
+        >
+          <div class="v-toolbar__content"
+               style="height: 64px;"
+          >
+            <div id="billerShowPageTitle"
+                 class="v-toolbar__title"
+            >
+              Biller information
+            </div>
+            <div class="spacer">
+            </div>
+            <div class="v-menu">
+            </div>
+            <button type="button"
+                    class="v-btn v-btn--icon v-btn--round theme--light v-size--default"
+                    id="billerShowPageMenuActivator"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+            >
+              <span class="v-btn__content">
+                <i aria-hidden="true"
+                   class="v-icon notranslate mdi mdi-dots-vertical theme--light"
+                >
+                </i>
+              </span>
+            </button>
+          </div>
+        </header>
+        <hr role="separator"
+            aria-orientation="horizontal"
+            class="v-divider theme--light"
+        >
+        <div role="list"
+             id="billerShowPageList"
+             class="v-list v-sheet theme--light v-list--dense"
+        >
+          <div tabindex="-1"
+               id="billerShowPageIdListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Biller id
+            </div>
+            <div class="v-list-item__content">
+              123
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="billerShowPageNameListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Name
+            </div>
+            <div class="v-list-item__content">
+              NAME
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="billerShowPageAddressLineOneListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Address line 1
+            </div>
+            <div class="v-list-item__content">
+              ADDRESS LINE ONE
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="billerShowPageAddressLineTwoListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Address line 2
+            </div>
+            <div class="v-list-item__content">
+              ADDRESS LINE TWO
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="billerShowPageEmailListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Email
+            </div>
+            <div class="v-list-item__content">
+              EMAIL
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="billerShowPagePhoneNumberListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Phone number
+            </div>
+            <div class="v-list-item__content">
+              PHONE NUMBER
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="billerShowPageBusinessIdentityCodeListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Business identity code
+            </div>
+            <div class="v-list-item__content">
+              BUSINESS IDENTITY CODE
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="billerShowPageBankNameListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Bank name
+            </div>
+            <div class="v-list-item__content">
+              BANK NAME
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="billerShowPageBankIbanListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Bank iban
+            </div>
+            <div class="v-list-item__content">
+              BANK IBAN
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="billerShowPageBankBicListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Bank bic
+            </div>
+            <div class="v-list-item__content">
+              BANK BIC
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="billerShowPagePdfTitleListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Pdf title
+            </div>
+            <div class="v-list-item__content">
+              PDF TITLE
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="billerShowPagePdfAuthorListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Pdf author
+            </div>
+            <div class="v-list-item__content">
+              PDF AUTHOR
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="billerShowPageCreatedAtListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Created
+            </div>
+            <div class="v-list-item__content">
+              1.1.2021 12:00:01
+            </div>
+          </div>
+          <div tabindex="-1"
+               id="billerShowPageUpdatedAtListItem"
+               role="listitem"
+               class="v-list-item theme--light"
+          >
+            <div class="v-list-item__content text-caption blue--text text--darken-2 font-weight-bold">
+              Updated
+            </div>
+            <div class="v-list-item__content">
+              2.2.2021 12:00:02
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <lskdialogaddoreditbiller-stub cid="billerShowPageEditBillerDialog"
+                                 currentdata="[object Object]"
+                                 id="123"
+  >
+  </lskdialogaddoreditbiller-stub>
+</div>
+`;

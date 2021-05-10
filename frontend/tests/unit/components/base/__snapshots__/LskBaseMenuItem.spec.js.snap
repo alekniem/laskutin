@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskBaseMenuItem should match snapshot 1`] = `
+<div tabindex="0"
+     id="TEST_CID"
+     class="v-list-item v-list-item--link theme--light"
+>
+  <div class="v-list-item__title">
+    TEST TEXT
+  </div>
+</div>
+`;

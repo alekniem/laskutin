@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskDialogAddOrEdit should match snapshot: dialog not visible 1`] = `
+<div role="dialog"
+     class="v-dialog__container"
+>
+</div>
+`;
+
+exports[`LskDialogAddOrEdit should match snapshot: dialog visible 1`] = `
+<div role="dialog"
+     class="v-dialog__container"
+>
+  <div role="document"
+       tabindex="0"
+       class="v-dialog__content v-dialog__content--active"
+       style="z-index: 202;"
+  >
+    <transition-stub name="dialog-transition"
+                     appear="true"
+    >
+      <div class="v-dialog v-dialog--active v-dialog--persistent"
+           style="transform-origin: center center; max-width: 700px;"
+      >
+        <span>
+          <form novalidate="novalidate"
+                class="v-form"
+          >
+            <div>
+              <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                <div class="v-input__control">
+                  <div class="v-input__slot">
+                    <div class="v-text-field__slot">
+                      <label for="testOneInput"
+                             class="v-label theme--light"
+                             style="left: 0px; position: absolute;"
+                      >
+                        Test one
+                      </label>
+                      <input id="testOneInput"
+                             type="text"
+                      >
+                    </div>
+                  </div>
+                  <div class="v-text-field__details">
+                    <div class="v-messages theme--light">
+                      <transition-group-stub tag="div"
+                                             name="message-transition"
+                                             class="v-messages__wrapper"
+                      >
+                      </transition-group-stub>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                <div class="v-input__control">
+                  <div class="v-input__slot">
+                    <div class="v-text-field__slot">
+                      <label for="testTwoInput"
+                             class="v-label theme--light"
+                             style="left: 0px; position: absolute;"
+                      >
+                        Test two
+                      </label>
+                      <input id="testTwoInput"
+                             type="text"
+                      >
+                    </div>
+                  </div>
+                  <div class="v-text-field__details">
+                    <div class="v-messages theme--light">
+                      <transition-group-stub tag="div"
+                                             name="message-transition"
+                                             class="v-messages__wrapper"
+                      >
+                      </transition-group-stub>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button"
+                    class="v-btn v-btn--has-bg theme--light v-size--small primary"
+                    id="cancelButton"
+            >
+              <span class="v-btn__content">
+                Cancel
+              </span>
+            </button>
+            <button type="button"
+                    disabled="disabled"
+                    class="v-btn v-btn--disabled v-btn--has-bg theme--light v-size--small"
+                    id="saveButton"
+            >
+              <span class="v-btn__content">
+                Save
+              </span>
+            </button>
+          </form>
+        </span>
+      </div>
+    </transition-stub>
+  </div>
+</div>
+`;
+
+exports[`LskDialogAddOrEdit should match snapshot: error messages 1`] = `
+<div role="dialog"
+     class="v-dialog__container"
+>
+  <div role="document"
+       tabindex="0"
+       class="v-dialog__content v-dialog__content--active"
+       style="z-index: 202;"
+  >
+    <transition-stub name="dialog-transition"
+                     appear="true"
+    >
+      <div class="v-dialog v-dialog--active v-dialog--persistent"
+           style="transform-origin: center center; max-width: 700px;"
+      >
+        <span>
+          <form novalidate="novalidate"
+                class="v-form"
+          >
+            <div>
+              <div class="v-input v-input--has-state theme--light v-text-field v-text-field--is-booted error--text">
+                <div class="v-input__control">
+                  <div class="v-input__slot">
+                    <div class="v-text-field__slot">
+                      <label for="testOneInput"
+                             class="v-label theme--light error--text"
+                             style="left: 0px; position: absolute;"
+                      >
+                        Test one
+                      </label>
+                      <input id="testOneInput"
+                             type="text"
+                      >
+                    </div>
+                  </div>
+                  <div class="v-text-field__details">
+                    <div class="v-messages theme--light error--text"
+                         role="alert"
+                    >
+                      <transition-group-stub tag="div"
+                                             name="message-transition"
+                                             class="v-messages__wrapper"
+                      >
+                        <div class="v-messages__message">
+                          Required
+                        </div>
+                      </transition-group-stub>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="v-input v-input--has-state theme--light v-text-field v-text-field--is-booted error--text">
+                <div class="v-input__control">
+                  <div class="v-input__slot">
+                    <div class="v-text-field__slot">
+                      <label for="testTwoInput"
+                             class="v-label theme--light error--text"
+                             style="left: 0px; position: absolute;"
+                      >
+                        Test two
+                      </label>
+                      <input id="testTwoInput"
+                             type="text"
+                      >
+                    </div>
+                  </div>
+                  <div class="v-text-field__details">
+                    <div class="v-messages theme--light error--text"
+                         role="alert"
+                    >
+                      <transition-group-stub tag="div"
+                                             name="message-transition"
+                                             class="v-messages__wrapper"
+                      >
+                        <div class="v-messages__message">
+                          Required
+                        </div>
+                      </transition-group-stub>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button"
+                    class="v-btn v-btn--has-bg theme--light v-size--small primary"
+                    id="cancelButton"
+            >
+              <span class="v-btn__content">
+                Cancel
+              </span>
+            </button>
+            <button type="button"
+                    disabled="disabled"
+                    class="v-btn v-btn--disabled v-btn--has-bg theme--light v-size--small"
+                    id="saveButton"
+            >
+              <span class="v-btn__content">
+                Save
+              </span>
+            </button>
+          </form>
+        </span>
+      </div>
+    </transition-stub>
+  </div>
+</div>
+`;

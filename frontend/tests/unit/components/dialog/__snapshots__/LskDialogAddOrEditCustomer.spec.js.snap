@@ -1,0 +1,327 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LskDialogAddOrEditCustomer should match snapshot: dialog not visible 1`] = `
+<div role="dialog"
+     class="v-dialog__container"
+>
+</div>
+`;
+
+exports[`LskDialogAddOrEditCustomer should match snapshot: dialog visible 1`] = `
+<div role="dialog"
+     class="v-dialog__container"
+>
+  <div role="document"
+       tabindex="0"
+       class="v-dialog__content v-dialog__content--active"
+       style="z-index: 202;"
+  >
+    <transition-stub name="dialog-transition"
+                     appear="true"
+    >
+      <div class="v-dialog v-dialog--active v-dialog--persistent"
+           style="transform-origin: center center; max-width: 700px;"
+      >
+        <span>
+          <form novalidate="novalidate"
+                class="v-form"
+          >
+            <div class="v-card v-sheet theme--light">
+              <div id="TEST_CIDTitle"
+                   class="v-card__title"
+              >
+                Add new customer
+              </div>
+              <div class="v-card__text">
+                <div class="row row--dense">
+                  <div class="col">
+                    <div>
+                      <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                        <div class="v-input__control">
+                          <div class="v-input__slot">
+                            <div class="v-text-field__slot">
+                              <label for="TEST_CIDNameInput"
+                                     class="v-label theme--light"
+                                     style="left: 0px; position: absolute;"
+                              >
+                                Name
+                              </label>
+                              <input id="TEST_CIDNameInput"
+                                     type="text"
+                              >
+                            </div>
+                          </div>
+                          <div class="v-text-field__details">
+                            <div class="v-messages theme--light">
+                              <transition-group-stub tag="div"
+                                                     name="message-transition"
+                                                     class="v-messages__wrapper"
+                              >
+                              </transition-group-stub>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div>
+                      <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                        <div class="v-input__control">
+                          <div class="v-input__slot">
+                            <div class="v-text-field__slot">
+                              <label for="TEST_CIDAddressLineOneInput"
+                                     class="v-label theme--light"
+                                     style="left: 0px; position: absolute;"
+                              >
+                                Address line 1
+                              </label>
+                              <input id="TEST_CIDAddressLineOneInput"
+                                     type="text"
+                              >
+                            </div>
+                          </div>
+                          <div class="v-text-field__details">
+                            <div class="v-messages theme--light">
+                              <transition-group-stub tag="div"
+                                                     name="message-transition"
+                                                     class="v-messages__wrapper"
+                              >
+                              </transition-group-stub>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div>
+                      <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                        <div class="v-input__control">
+                          <div class="v-input__slot">
+                            <div class="v-text-field__slot">
+                              <label for="TEST_CIDAddressLineTwoInput"
+                                     class="v-label theme--light"
+                                     style="left: 0px; position: absolute;"
+                              >
+                                Address line 2
+                              </label>
+                              <input id="TEST_CIDAddressLineTwoInput"
+                                     type="text"
+                              >
+                            </div>
+                          </div>
+                          <div class="v-text-field__details">
+                            <div class="v-messages theme--light">
+                              <transition-group-stub tag="div"
+                                                     name="message-transition"
+                                                     class="v-messages__wrapper"
+                              >
+                              </transition-group-stub>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="v-card__actions">
+                <div class="spacer">
+                </div>
+                <button type="button"
+                        class="v-btn v-btn--has-bg theme--light v-size--small primary"
+                        id="TEST_CIDCancelButton"
+                >
+                  <span class="v-btn__content">
+                    Cancel
+                  </span>
+                </button>
+                <button type="button"
+                        disabled="disabled"
+                        class="v-btn v-btn--disabled v-btn--has-bg theme--light v-size--small"
+                        id="TEST_CIDSaveButton"
+                >
+                  <span class="v-btn__content">
+                    Save
+                  </span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </span>
+      </div>
+    </transition-stub>
+  </div>
+</div>
+`;
+
+exports[`LskDialogAddOrEditCustomer should match snapshot: error messages 1`] = `
+<div role="dialog"
+     class="v-dialog__container"
+>
+  <div role="document"
+       tabindex="0"
+       class="v-dialog__content v-dialog__content--active"
+       style="z-index: 202;"
+  >
+    <transition-stub name="dialog-transition"
+                     appear="true"
+    >
+      <div class="v-dialog v-dialog--active v-dialog--persistent"
+           style="transform-origin: center center; max-width: 700px;"
+      >
+        <span>
+          <form novalidate="novalidate"
+                class="v-form"
+          >
+            <div class="v-card v-sheet theme--light">
+              <div id="TEST_CIDTitle"
+                   class="v-card__title"
+              >
+                Add new customer
+              </div>
+              <div class="v-card__text">
+                <div class="row row--dense">
+                  <div class="col">
+                    <div>
+                      <div class="v-input v-input--has-state theme--light v-text-field v-text-field--is-booted error--text">
+                        <div class="v-input__control">
+                          <div class="v-input__slot">
+                            <div class="v-text-field__slot">
+                              <label for="TEST_CIDNameInput"
+                                     class="v-label theme--light error--text"
+                                     style="left: 0px; position: absolute;"
+                              >
+                                Name
+                              </label>
+                              <input id="TEST_CIDNameInput"
+                                     type="text"
+                              >
+                            </div>
+                          </div>
+                          <div class="v-text-field__details">
+                            <div class="v-messages theme--light error--text"
+                                 role="alert"
+                            >
+                              <transition-group-stub tag="div"
+                                                     name="message-transition"
+                                                     class="v-messages__wrapper"
+                              >
+                                <div class="v-messages__message">
+                                  Required
+                                </div>
+                              </transition-group-stub>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div>
+                      <div class="v-input v-input--has-state theme--light v-text-field v-text-field--is-booted error--text">
+                        <div class="v-input__control">
+                          <div class="v-input__slot">
+                            <div class="v-text-field__slot">
+                              <label for="TEST_CIDAddressLineOneInput"
+                                     class="v-label theme--light error--text"
+                                     style="left: 0px; position: absolute;"
+                              >
+                                Address line 1
+                              </label>
+                              <input id="TEST_CIDAddressLineOneInput"
+                                     type="text"
+                              >
+                            </div>
+                          </div>
+                          <div class="v-text-field__details">
+                            <div class="v-messages theme--light error--text"
+                                 role="alert"
+                            >
+                              <transition-group-stub tag="div"
+                                                     name="message-transition"
+                                                     class="v-messages__wrapper"
+                              >
+                                <div class="v-messages__message">
+                                  Required
+                                </div>
+                              </transition-group-stub>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div>
+                      <div class="v-input v-input--has-state theme--light v-text-field v-text-field--is-booted error--text">
+                        <div class="v-input__control">
+                          <div class="v-input__slot">
+                            <div class="v-text-field__slot">
+                              <label for="TEST_CIDAddressLineTwoInput"
+                                     class="v-label theme--light error--text"
+                                     style="left: 0px; position: absolute;"
+                              >
+                                Address line 2
+                              </label>
+                              <input id="TEST_CIDAddressLineTwoInput"
+                                     type="text"
+                              >
+                            </div>
+                          </div>
+                          <div class="v-text-field__details">
+                            <div class="v-messages theme--light error--text"
+                                 role="alert"
+                            >
+                              <transition-group-stub tag="div"
+                                                     name="message-transition"
+                                                     class="v-messages__wrapper"
+                              >
+                                <div class="v-messages__message">
+                                  Required
+                                </div>
+                              </transition-group-stub>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="red--text font-weight-bold">
+                  ERROR ONE
+                </div>
+                <div class="red--text font-weight-bold">
+                  ERROR TWO
+                </div>
+              </div>
+              <div class="v-card__actions">
+                <div class="spacer">
+                </div>
+                <button type="button"
+                        class="v-btn v-btn--has-bg theme--light v-size--small primary"
+                        id="TEST_CIDCancelButton"
+                >
+                  <span class="v-btn__content">
+                    Cancel
+                  </span>
+                </button>
+                <button type="button"
+                        disabled="disabled"
+                        class="v-btn v-btn--disabled v-btn--has-bg theme--light v-size--small"
+                        id="TEST_CIDSaveButton"
+                >
+                  <span class="v-btn__content">
+                    Save
+                  </span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </span>
+      </div>
+    </transition-stub>
+  </div>
+</div>
+`;
