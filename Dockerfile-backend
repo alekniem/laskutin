@@ -1,0 +1,54 @@
+#-------------------------------------------------------------------------------
+# Laskutin backend
+#-------------------------------------------------------------------------------
+
+FROM php:7.4.19-apache
+
+WORKDIR /var/www
+
+RUN apt-get -y update && apt-get -y install \
+    texlive-latex-base \
+    texlive-latex-recommended \
+    texlive-fonts-recommended \
+    texlive-lang-european \
+    texlive-pictures \
+    git \
+    zip \
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=composer:2.0.13 /usr/bin/composer /usr/bin/composer
+
+COPY backend/composer.* ./
+
+RUN composer install --no-scripts
+
+ENV APACHE_DOCUMENT_ROOT /var/www/public
+
+RUN set -xe \
+    && echo "ServerName localhost" > /etc/apache2/conf-available/fqdn.conf \
+    && a2enconf fqdn \
+    && a2enmod rewrite \
+    && sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf \
+    && sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf \
+    && rm -rf /var/www/html
+
+COPY backend/app ./app
+COPY backend/bootstrap ./bootstrap
+COPY backend/config ./config
+COPY backend/database ./database
+COPY backend/public ./public
+COPY backend/resources ./resources
+COPY backend/routes ./routes
+COPY backend/storage ./storage
+COPY backend/tests ./tests
+COPY backend/.env.production backend/artisan backend/phpunit.xml ./
+
+RUN set -xe \
+    && mkdir /laskutin \
+    && touch /laskutin/laskutin.sqlite \
+    && cp .env.production .env \
+    && composer run-script post-autoload-dump \
+    && composer run-script post-create-project-cmd \
+    && chown -R www-data:www-data /laskutin \
+    && chown -R www-data:www-data /var/www

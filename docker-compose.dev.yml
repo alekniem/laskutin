@@ -1,0 +1,35 @@
+version: "3.4"
+
+services:
+    backend:
+        container_name: laskutin_backend_dev
+        image: laskutin_backend_dev
+        build:
+            args:
+                - user=${user:?Environment variable "user" missing}
+                - group=${group:?Environment variable "group" missing}
+                - uid=${uid:?Environment variable "uid" missing}
+                - gid=${gid:?Environment variable "gid" missing}
+            context: .
+            dockerfile: Dockerfile-backend-dev
+        volumes:
+            - type: bind
+              source: ./backend
+              target: /var/www
+        ports:
+            - "8001:80"
+
+    frontend:
+        container_name: laskutin_frontend_dev
+        image: laskutin_frontend_dev
+        build:
+            context: .
+            dockerfile: Dockerfile-frontend-dev
+        volumes:
+            - type: bind
+              source: ./frontend
+              target: /var/www
+        ports:
+            - "8000:80"
+        depends_on:
+            - backend

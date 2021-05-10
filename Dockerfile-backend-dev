@@ -1,0 +1,43 @@
+#-------------------------------------------------------------------------------
+# Laskutin backend (development)
+#-------------------------------------------------------------------------------
+
+FROM php:7.4.19-apache
+
+WORKDIR /var/www
+
+RUN apt-get -y update && apt-get -y install \
+    texlive-latex-base \
+    texlive-latex-recommended \
+    texlive-fonts-recommended \
+    texlive-lang-european \
+    texlive-pictures \
+    git \
+    zip \
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=composer:2.0.13 /usr/bin/composer /usr/bin/composer
+
+ARG user
+ARG group
+ARG uid
+ARG gid
+
+ENV APACHE_RUN_USER $user
+ENV APACHE_RUN_GROUP $group
+ENV APACHE_DOCUMENT_ROOT /var/www/public
+
+RUN set -xe \
+    && echo "ServerName localhost" > /etc/apache2/conf-available/fqdn.conf \
+    && a2enconf fqdn \
+    && a2enmod rewrite \
+    && sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf \
+    && sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf \
+    && pecl install xdebug-3.0.3 \
+    && docker-php-ext-enable xdebug \
+    && echo "xdebug.mode=coverage" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+    && (getent group $gid || groupadd -g $gid $group) \
+    && useradd -u $uid -g $gid $user
+
+USER $user:$group
